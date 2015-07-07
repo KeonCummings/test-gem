@@ -1,8 +1,8 @@
 # Test API Gem LFO
 ## Dependencies
-*ruby 2.2.1p85
+* ruby 2.2.1
 ##Setup
-1. ###Load Gem Locally
+1. ### Load Gem Locally
   1. gem build leapAPI.gemspec
 2. ###I nstall Gem Locally
   1. gem install leapfrogTest
