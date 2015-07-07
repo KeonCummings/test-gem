@@ -1,6 +1,6 @@
 # Test API Gem LFO
 ## Dependencies
-**ruby 2.2.1**
+**ruby 2.2.1, minitest 5.7.0**
 ##Setup
 1. **Load Gem Locally**
   1. gem build leapAPI.gemspec
