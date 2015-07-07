@@ -6,6 +6,7 @@ require 'json'
 
 class LeapApi
 	# request information from the api 
+	attr_accessor :response, :url
 	def initialize(url)
 		begin
 		 	@response = open(url).read
@@ -15,7 +16,7 @@ class LeapApi
 		end
 	end
 
-	def self.getPropensity()
+	def getPropensity()
 		#subset propensity from response and return it
 		begin
 			propensity = @response["propensity"]
@@ -25,7 +26,7 @@ class LeapApi
 		end
 	end
 
-	def self.getRanking()
+	def getRanking()
 		#subset ranking from response and return it
 		begin
 			ranking = @response["ranking"]
@@ -33,5 +34,9 @@ class LeapApi
 		rescue
 			"Ranking does not exist in this data set"
 		end
+	end
+
+	def getResponse()
+		return @response
 	end
 end

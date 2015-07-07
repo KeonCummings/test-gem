@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.description = "A simple solution"
   s.authors     = ["Keon Cummings"]
   s.email       = 'kcmmings@gmail.com'
-  s.files       = ["lib/LeapApi.rb"]
+  s.files       = ["lib/leapApi.rb"]
 end
